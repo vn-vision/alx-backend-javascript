@@ -17,6 +17,6 @@
 // this is more readable and easier to understand.
 export default function cleanSet(set, startString) {
   if (typeof startString !== 'string' || !startString || startString.length === 0) return '';
-  const res = [...set].filter((word) => word.startsWith(startString));
-  return res.map((word) => word.slice(startString.length)).join('-');
+  const res = [...set].filter((word) => (word ? word.startsWith(startString) : ''));
+  return res.map((word) => (word ? word.slice(startString.length) : '')).join('-');
 }
