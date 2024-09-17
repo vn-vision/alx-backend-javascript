@@ -1,3 +1,6 @@
-module.exports = function displayMessage(message) {
+/**
+ * stdout
+ */
+module.exports = const displayMessage(message) {
   console.log(message);
 }; 
