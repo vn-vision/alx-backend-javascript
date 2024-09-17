@@ -1,9 +1,9 @@
 /**
- * Displays a message on STDOUT
- * @param {String} message -> message to display
+ * Displays a message on the STDOUT.
+ * @param {String} msg The message to display.
  */
-function displayMessage(message) {
-  console.log(message);
+const displayMessage = (msg) => {
+  console.log(msg);
 };
 
 module.exports = displayMessage;
