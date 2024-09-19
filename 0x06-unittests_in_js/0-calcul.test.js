@@ -25,5 +25,5 @@ describe('calculateNumber', () => {
     it('should handle -ve numbers well', () => {
         const result = calculateNumber(-1, -2.1);
         assert.equal(result, -3);
-    })
+    });
 });
